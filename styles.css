@@ -1120,4 +1120,130 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    --primary-color: #818cf8;
+    --secondary-color: #a5b4fc;
+    --accent-color: #22d3ee;
+    --text-primary: #f3f4f6;
+    --text-secondary: #a1a1aa;
+    --bg-primary: #18181b;
+    --bg-secondary: #23232a;
+    --bg-dark: #09090b;
+    --border-color: #27272a;
+    --shadow-light: 0 4px 6px -1px rgba(0,0,0,0.5);
+    --shadow-medium: 0 10px 15px -3px rgba(0,0,0,0.5);
+    --shadow-heavy: 0 25px 50px -12px rgba(0,0,0,0.7);
+    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #818cf8 100%);
+    --gradient-secondary: linear-gradient(135deg, #22d3ee 0%, #818cf8 100%);
+    --glass-bg: rgba(24, 24, 27, 0.7);
+    --glass-border: rgba(255,255,255,0.08);
+}
+
+.dark-mode body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.dark-mode .navbar,
+.dark-mode .navbar.scrolled {
+    background: rgba(24, 24, 27, 0.95);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.dark-mode .nav-link {
+    color: var(--text-primary);
+}
+
+.dark-mode .nav-link::after {
+    background: var(--gradient-primary);
+}
+
+.dark-mode .btn-secondary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.dark-mode .btn-secondary:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.dark-mode .section-header h2,
+.dark-mode .section-header p {
+    color: var(--text-primary);
+}
+
+.dark-mode .about,
+.dark-mode .destinations,
+.dark-mode .packages,
+.dark-mode .why-choose-us,
+.dark-mode .testimonials,
+.dark-mode .gallery,
+.dark-mode .contact,
+.dark-mode .footer {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.dark-mode .destination-card,
+.dark-mode .package-card,
+.dark-mode .feature-card,
+.dark-mode .testimonial-card,
+.dark-mode .gallery-item,
+.dark-mode .form-group input,
+.dark-mode .form-group textarea,
+.dark-mode .form-group select {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.dark-mode .form-group label {
+    color: var(--text-secondary);
+}
+
+.dark-mode .footer {
+    background: #18181b;
+    color: var(--text-primary);
+}
+
+.dark-mode .footer-section h3,
+.dark-mode .footer-section h4 {
+    color: var(--primary-color);
+}
+
+.dark-mode .footer-bottom {
+    border-top: 1px solid var(--border-color);
+}
+
+/* .dark-mode .social-links a {
+    color: var(--text-secondary);
+} */
+
+.dark-mode .social-links a:hover {
+    color: var(--primary-color);
+}
+
+.dark-mode .newsletter-form input {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.dark-mode .newsletter-form button {
+    background: var(--gradient-primary);
+    color: #fff;
+}
+
+.dark-mode .floating-cta button {
+    background: var(--gradient-primary);
+    color: #fff;
+}
+
+.dark-mode .whatsapp-button a {
+    background: #23232a;
+    color: #25d366;
 } 
