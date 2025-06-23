@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderX - Your Next Adventure Begins Here</title>
+    <meta name="description" content="Discover personalized travel packages, luxury escapes, and adventure trips with WanderX. Your trusted travel partner for unforgettable experiences.">
+    <meta name="keywords" content="travel agency, luxury travel, adventure trips, personalized packages, WanderX">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>WanderX</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#packages" class="nav-link">Packages</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-slider">
+                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80')"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                <h1>Your Next Adventure Begins Here</h1>
+                <p>Discover personalized travel experiences that transform your dreams into unforgettable memories</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('destinations')">
+                        <i class="fas fa-compass"></i>
+                        Explore Destinations
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-plane"></i>
+                        Plan My Trip
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About WanderX</h2>
+                <p>Your trusted partner in creating extraordinary travel experiences</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>With over a decade of expertise in crafting personalized travel experiences, WanderX has been the gateway to unforgettable adventures for thousands of travelers worldwide. We believe every journey should be as unique as the traveler embarking on it.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-globe"></i>
+                            <span>Global Reach</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Personalized Service</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Safe Travel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Destinations</div>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Happy Travelers</div>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label">/7 Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Top Destinations</h2>
+                <p>Explore our most popular travel destinations</p>
+            </div>
+            <div class="destinations-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="destination-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Swiss Alps">
+                        <div class="destination-overlay">
+                            <button class="btn btn-primary">Explore</button>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Swiss Alps</h3>
+                        <p>Majestic mountains and pristine landscapes</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-clock"></i> 7 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="Santorini">
+                        <div class="destination-overlay">
+                            <button class="btn btn-primary">Explore</button>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Santorini</h3>
+                        <p>Stunning sunsets and white-washed buildings</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                            <span><i class="fas fa-clock"></i> 5 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" alt="Bali">
+                        <div class="destination-overlay">
+                            <button class="btn btn-primary">Explore</button>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Bali</h3>
+                        <p>Tropical paradise and cultural richness</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                            <span><i class="fas fa-clock"></i> 8 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1546436836-07a91091f160?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="New York">
+                        <div class="destination-overlay">
+                            <button class="btn btn-primary">Explore</button>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>New York</h3>
+                        <p>The city that never sleeps</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                            <span><i class="fas fa-clock"></i> 6 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" alt="Tokyo">
+                        <div class="destination-overlay">
+                            <button class="btn btn-primary">Explore</button>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Tokyo</h3>
+                        <p>Where tradition meets cutting-edge technology</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                            <span><i class="fas fa-clock"></i> 9 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1583265266785-aab9e443ee68?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paris">
+                        <div class="destination-overlay">
+                            <button class="btn btn-primary">Explore</button>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Paris</h3>
+                        <p>The city of love, art, and culinary excellence</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-clock"></i> 7 days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Packages</h2>
+                <p>Choose from our carefully curated travel packages</p>
+            </div>
+            <div class="package-filters" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="weekend">Weekend</button>
+                <button class="filter-btn" data-filter="family">Family</button>
+            </div>
+            <div class="packages-grid" data-aos="fade-up" data-aos-delay="300">
+                <div class="package-card" data-category="adventure">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Mountain Adventure">
+                        <div class="package-badge">Adventure</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Mountain Adventure</h3>
+                        <p>Conquer peaks and explore wilderness</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Guided hiking</li>
+                            <li><i class="fas fa-check"></i> Camping equipment</li>
+                            <li><i class="fas fa-check"></i> Safety gear</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price">$899</span>
+                            <span class="duration">/ 5 days</span>
+                        </div>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+                <div class="package-card" data-category="luxury">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2068&q=80" alt="Luxury Retreat">
+                        <div class="package-badge">Luxury</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Luxury Retreat</h3>
+                        <p>Indulge in world-class accommodations</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 5-star hotels</li>
+                            <li><i class="fas fa-check"></i> Private transfers</li>
+                            <li><i class="fas fa-check"></i> Fine dining</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price">$2,499</span>
+                            <span class="duration">/ 7 days</span>
+                        </div>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+                <div class="package-card" data-category="weekend">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Weekend Escape">
+                        <div class="package-badge">Weekend</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Weekend Escape</h3>
+                        <p>Quick getaways for busy professionals</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Short duration</li>
+                            <li><i class="fas fa-check"></i> All-inclusive</li>
+                            <li><i class="fas fa-check"></i> Flexible dates</li>
+                        </ul>
+                        <div class="package-price">
+                            <span class="price">$399</span>
+                            <span class="duration">/ 3 days</span>
+                        </div>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Why Choose WanderX</h2>
+                <p>We go above and beyond to ensure your perfect journey</p>
+            </div>
+            <div class="features-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock assistance for peace of mind</p>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Tailored Itineraries</h3>
+                    <p>Customized plans that match your preferences</p>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Local Experts</h3>
+                    <p>Insider knowledge from destination specialists</p>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Booking</h3>
+                    <p>Quick and secure reservation process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our Travelers Say</h2>
+                <p>Real experiences from real people</p>
+            </div>
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"WanderX made our honeymoon absolutely perfect. Every detail was taken care of, and we felt like VIPs throughout our entire trip."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sarah Johnson">
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <span>Honeymoon Traveler</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"The adventure package exceeded all expectations. Our guide was knowledgeable and the experience was truly unforgettable."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" alt="Mike Chen">
+                                <div class="author-info">
+                                    <h4>Mike Chen</h4>
+                                    <span>Adventure Seeker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Professional service from start to finish. They handled all the logistics perfectly, allowing us to focus on enjoying our vacation."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" alt="Emily Rodriguez">
+                                <div class="author-info">
+                                    <h4>Emily Rodriguez</h4>
+                                    <span>Family Traveler</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Visual Journey</h2>
+                <p>Glimpses of unforgettable moments</p>
+            </div>
+            <div class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="Travel Experience">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Travel Experience">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" alt="Travel Experience">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1546436836-07a91091f160?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Travel Experience">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Travel Experience">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1677504473945-337d50c3c06f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Travel Experience">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Plan Your Trip</h2>
+                <p>Let's create your perfect adventure together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form" data-aos="fade-right">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="destination" name="destination" required>
+                                <option value="">Select Destination</option>
+                                <option value="swiss-alps">Swiss Alps</option>
+                                <option value="santorini">Santorini</option>
+                                <option value="bali">Bali</option>
+                                <option value="new-york">New York</option>
+                                <option value="custom">Custom Destination</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="budget" name="budget" required>
+                                <option value="">Select Budget Range</option>
+                                <option value="budget">$500 - $1,000</option>
+                                <option value="mid-range">$1,000 - $3,000</option>
+                                <option value="luxury">$3,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="travel-date" name="travel-date" required>
+                            <label for="travel-date">Preferred Travel Date</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your dream trip..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Visit Us</h4>
+                            <p>123 Travel Street<br>Adventure City, AC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567<br>24/7 Support Available</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email Us</h4>
+                            <p>hello@wanderx.com<br>info@wanderx.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WanderX</h3>
+                    <p>Your gateway to extraordinary adventures and unforgettable experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Luxury Travel</a></li>
+                        <li><a href="#">Adventure Tours</a></li>
+                        <li><a href="#">Group Travel</a></li>
+                        <li><a href="#">Corporate Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for travel inspiration and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WanderX. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA Button -->
+    <div class="floating-cta">
+        <button class="btn btn-primary" onclick="scrollToSection('contact')">
+            <i class="fas fa-plane"></i>
+            Plan Your Trip
+        </button>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/15551234567" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
